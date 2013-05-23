@@ -12,7 +12,6 @@ define([
 		},
 
 		main: function() {
-			alert('called main');
 			// Create the collection
 			var comments = new Comment.collection();	
 
