@@ -25,16 +25,17 @@ define([
 					collection: this.collection
 				});
 
-				$('#commentsCountCountainer').append(commentsCountView.render().$el);
+				$('#commentsCountCountainer').empty().append(commentsCountView.render().$el);
 
 				var addCommentView = new AddCommentView({
 					collection: this.collection
 				});
 				addCommentView.setElement($('#add-comment'));
-			},
+			},			
 
 			addAllComments: function() {
 				var that = this;
+				$('#commentsContainer').empty();
 				this.collection.each(that.addOneComment);
 			},
 

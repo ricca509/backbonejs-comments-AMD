@@ -8,10 +8,11 @@ define([
 	'use strict';
 	var MainRouter = Backbone.Router.extend({
 		routes: {
-			"": "main"
+			"*actions": "main"
 		},
 
 		main: function() {
+			alert('called main');
 			// Create the collection
 			var comments = new Comment.collection();	
 

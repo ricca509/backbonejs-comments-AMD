@@ -2,7 +2,7 @@
 
 **What**
 
-An AMD version of Backbone-Comments using RequireJs
+An AMD version of Backbone-Comments using RequireJs.
 
 **How**
 
